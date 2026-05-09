@@ -1,13 +1,15 @@
+import Link from "next/link";
+
 export default function ServicesPage() {
   return (
     <>
       {/* Hero / Header Section */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <header className="mb-20 text-center max-w-3xl mx-auto">
-          <h1 className="font-['Manrope'] text-5xl md:text-6xl font-bold tracking-tight text-[#006485] mb-6">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-12 md:pt-20">
+        <header className="mb-16 md:mb-20 text-center max-w-3xl mx-auto">
+          <h1 className="font-['Manrope'] text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#006485] mb-6">
             Our Specialized Expertise
           </h1>
-          <p className="text-lg text-[#3f484d]">
+          <p className="text-base sm:text-lg text-[#3f484d]">
             We bridge the gap between architectural excellence and ecological
             responsibility, delivering structures that are built to last and
             designed to thrive with the environment.
@@ -41,15 +43,15 @@ export default function ServicesPage() {
                 geothermal heating, and low-impact materials without
                 compromising on luxury or structural integrity.
               </p>
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className="inline-flex items-center gap-1 text-sm font-medium text-[#006c48] hover:underline"
               >
-                View Portfolio{" "}
+                Learn More{" "}
                 <span className="material-symbols-outlined text-sm">
                   arrow_forward
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -80,7 +82,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Green Renovations (Asymmetric Wide) */}
-          <div className="md:col-span-12 group rounded-xl bg-white/50 backdrop-blur-sm border border-[#92f7c3] p-6 flex flex-col md:flex-row gap-6 items-center shadow-[0_4px_20px_rgba(44,125,160,0.08)]">
+          <div className="md:col-span-12 group rounded-xl bg-white/50 backdrop-blur-sm border border-[#92f7c3] p-6 flex flex-col md:flex-row gap-6 items-center shadow-[0_4px_20px_rgba(44,125,160,0.08)] text-center md:text-left">
             <div className="w-full md:w-1/3 aspect-video rounded-lg overflow-hidden">
               <img
                 alt="Green Renovations"
@@ -104,9 +106,9 @@ export default function ServicesPage() {
                 standards today.
               </p>
             </div>
-            <button className="bg-[#006c48] text-white px-8 py-3 rounded-lg text-sm font-semibold whitespace-nowrap hover:bg-[#005235] transition-colors">
+            <Link href="/contact" className="bg-[#006c48] text-white px-8 py-3 rounded-lg text-sm font-semibold whitespace-nowrap hover:bg-[#005235] transition-colors">
               Request a Quote
-            </button>
+            </Link>
           </div>
         </div>
 

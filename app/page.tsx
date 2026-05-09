@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[870px] flex items-center overflow-hidden">
+      <section className="relative min-h-[700px] md:min-h-[870px] flex items-center overflow-hidden pt-12 md:pt-0">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover"
@@ -17,19 +19,19 @@ export default function Home() {
               <span className="material-symbols-outlined text-[18px]">eco</span>
               Sustainable Excellence
             </span>
-            <h1 className="font-['Manrope'] text-5xl md:text-6xl font-bold tracking-tight text-[#004d67]">
+            <h1 className="font-['Manrope'] text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#004d67]">
               Building a Greener Future, Together.
             </h1>
-            <p className="text-lg font-normal text-[#3f484d] max-w-xl">
+            <p className="text-base sm:text-lg font-normal text-[#3f484d] max-w-xl">
               We blend meticulous craftsmanship with organic sustainability to create structures that anchor communities while respecting the earth.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-[#006485] text-white px-8 py-4 rounded-xl text-sm font-medium shadow-lg shadow-[#006485]/20 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4">
+              <Link href="/services" className="bg-[#006485] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm font-medium shadow-lg shadow-[#006485]/20 hover:shadow-xl hover:-translate-y-0.5 transition-all text-center">
                 View Our Services
-              </button>
-              <button className="border-2 border-[#006c48] text-[#006c48] px-8 py-4 rounded-xl text-sm font-medium hover:bg-[#006c48]/5 transition-all">
+              </Link>
+              <Link href="/about" className="border-2 border-[#006c48] text-[#006c48] px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm font-medium hover:bg-[#006c48]/5 transition-all text-center">
                 Our Impact
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -211,17 +213,17 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 max-w-5xl mx-auto px-6 text-center">
         <div className="bg-[#fff8f2] rounded-3xl p-12 md:p-20 shadow-2xl shadow-[#006485]/5 border border-[#f3ede7]">
-          <h2 className="font-['Manrope'] text-5xl md:text-6xl font-bold tracking-tight text-[#006485] mb-6">Ready to anchor your project?</h2>
-          <p className="text-lg text-[#3f484d] mb-6 max-w-2xl mx-auto">
+          <h2 className="font-['Manrope'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#006485] mb-6">Ready to anchor your project?</h2>
+          <p className="text-base sm:text-lg text-[#3f484d] mb-6 max-w-2xl mx-auto">
             Join us in redefining the skyline with environmental stewardship and professional excellence. Let's start the conversation about your greener future today.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-[#006c48] text-white px-10 py-4 rounded-xl font-['Manrope'] font-semibold hover:opacity-90 transition-all">
-              Schedule a Consultation
-            </button>
-            <button className="bg-[#ede7e1] text-[#006485] px-10 py-4 rounded-xl font-['Manrope'] font-semibold hover:bg-[#e8e1db] transition-all">
-              Download Brochure
-            </button>
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+            <Link href="/contact" className="bg-[#006c48] text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl font-['Manrope'] font-semibold hover:opacity-90 transition-all text-center">
+              Get in Touch
+            </Link>
+            <Link href="/services" className="bg-[#ede7e1] text-[#006485] px-8 sm:px-10 py-3 sm:py-4 rounded-xl font-['Manrope'] font-semibold hover:bg-[#e8e1db] transition-all text-center">
+              Explore Our Services
+            </Link>
           </div>
         </div>
       </section>

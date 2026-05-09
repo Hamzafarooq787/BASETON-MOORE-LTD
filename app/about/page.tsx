@@ -1,14 +1,16 @@
+import Link from "next/link";
+
 export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 md:px-12 mb-20">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 pt-12 md:pt-20 mb-16 md:mb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <span className="inline-block px-3 py-1 bg-[#92f7c3] text-[#00734d] rounded-full text-xs font-semibold tracking-wide uppercase">
               Our Philosophy
             </span>
-            <h1 className="font-['Manrope'] text-5xl md:text-6xl font-bold tracking-tight text-[#004d67]">
+            <h1 className="font-['Manrope'] text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#004d67]">
               Building the future with Earth &amp; Anchor.
             </h1>
             <p className="text-lg text-[#3f484d] max-w-xl">
@@ -149,12 +151,12 @@ export default function AboutPage() {
               communities with sustainable growth."
             </p>
             <div>
-              <button className="bg-[#006c48] text-white px-8 py-3 rounded-lg text-sm font-semibold hover:opacity-90 active:scale-95 transition-all flex items-center gap-2 mx-auto">
+              <Link href="/services" className="bg-[#006c48] text-white px-8 py-3 rounded-lg text-sm font-semibold hover:opacity-90 active:scale-95 transition-all inline-flex items-center gap-2 mx-auto">
                 View Our Services
                 <span className="material-symbols-outlined text-base">
                   arrow_forward
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

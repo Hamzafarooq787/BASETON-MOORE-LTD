@@ -2,12 +2,12 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Content */}
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-20 text-center md:text-left">
-          <h1 className="font-['Manrope'] text-5xl md:text-6xl font-bold tracking-tight text-[#006485] mb-6">
+      <div className="max-w-7xl mx-auto px-6 pt-12 md:pt-20">
+        <div className="mb-16 md:mb-20 text-center md:text-left">
+          <h1 className="font-['Manrope'] text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#006485] mb-6">
             Get in Touch
           </h1>
-          <p className="text-lg text-[#3f484d] max-w-2xl">
+          <p className="text-base sm:text-lg text-[#3f484d] max-w-2xl mx-auto md:mx-0">
             We're here to discuss your next sustainable construction project.
             Whether you're planning a modern renovation or a large-scale
             development, our team at BASETON MOORE LTD is ready to anchor your
@@ -75,34 +75,32 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Map / Local Area Image */}
-          <div className="md:col-span-7 h-[400px] md:h-full min-h-[400px] rounded-xl overflow-hidden shadow-lg border-4 border-[#e8e1db] relative group">
-            <img
-              alt="Stoke-on-Trent Area Map"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj0IeBIFPcu70tS1unMQjKKjlFZdPy0DlFPweUBG7EN_TKdYxtrXpru6y-kM0elHZUfHZwOsMMF058oy7WL0xDt76fnRDvTSTLGU8JE09XQF3jdgGPq3KKzfE9dJM51473-sqeTKL7OUf8sRFgYZ-jcY5A4F4gXnLrkMrUrgTfQ8koNFqhYQWYs0hU4tl1NwzdJQp-QVLlTzoieMuJvLzcJaVfXIBzTR47ue_UO3RYCzp_GtoBwy6fesQKh8GZwf2G_u88R1NIt8KT"
+          {/* Real Embedded Google Map */}
+          <div className="md:col-span-7 h-[360px] sm:h-[420px] md:h-full md:min-h-[480px] rounded-xl overflow-hidden shadow-lg border-4 border-[#e8e1db] relative group">
+            <iframe
+              title="Baseton Moore Ltd location – 24 Chamberlain Street, Stoke-on-Trent ST1 4NR"
+              src="https://www.google.com/maps?q=24+Chamberlain+Street,+Stoke-on-Trent,+ST1+4NR&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              className="w-full h-full border-0"
             />
-            <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-lg shadow-xl flex items-center justify-between">
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/90 backdrop-blur-md p-4 sm:p-6 rounded-lg shadow-xl flex items-center justify-between gap-4 pointer-events-none">
               <div>
-                <p className="font-['Manrope'] text-2xl font-semibold text-[#1d1b18]">
+                <p className="font-['Manrope'] text-lg sm:text-2xl font-semibold text-[#1d1b18]">
                   Find us in Stoke-on-Trent
                 </p>
-                <p className="text-[#3f484d]">Located in the heart of the Midlands</p>
+                <p className="text-sm sm:text-base text-[#3f484d]">Located in the heart of the Midlands</p>
               </div>
-              <div className="hidden sm:flex w-10 h-10 bg-[#006c48] rounded-full items-center justify-center text-white">
+              <a
+                href="https://www.google.com/maps?q=24+Chamberlain+Street,+Stoke-on-Trent,+ST1+4NR"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open in Google Maps"
+                className="hidden sm:flex w-10 h-10 bg-[#006c48] rounded-full items-center justify-center text-white pointer-events-auto hover:opacity-90 transition-opacity"
+              >
                 <span className="material-symbols-outlined">near_me</span>
-              </div>
-            </div>
-            {/* Map Pin Decorative Overlay */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-              <div className="relative">
-                <span
-                  className="material-symbols-outlined text-[#006485] text-5xl drop-shadow-xl animate-bounce [font-variation-settings:'FILL'_1]"
-                >
-                  location_on
-                </span>
-                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-1 bg-[#1d1b18]/20 blur-sm rounded-full"></div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
