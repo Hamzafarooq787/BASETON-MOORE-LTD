@@ -43,8 +43,8 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-[#92f7c3]">
                   mail
                 </span>
-                <a href="mailto:sales@basetonmoore.co.uk" className="text-stone-300 text-sm break-all hover:text-[#92f7c3] transition-colors">
-                  sales@basetonmoore.co.uk
+                <a href="mailto:basetonmoore.co.uk" className="text-stone-300 text-sm break-all hover:text-[#92f7c3] transition-colors">
+                  basetonmoore.co.uk
                 </a>
               </div>
             </div>

@@ -59,10 +59,10 @@ export default function ContactPage() {
                 </div>
               </div>
               <a
-                href="mailto:sales@basetonmoore.co.uk"
+                href="mailto:basetonmoore.co.uk"
                 className="text-lg text-[#006485] hover:text-[#004d67] font-semibold transition-colors break-all"
               >
-                sales@basetonmoore.co.uk
+                basetonmoore.co.uk
               </a>
             </div>
 
