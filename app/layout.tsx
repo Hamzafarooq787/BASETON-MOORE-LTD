@@ -5,8 +5,25 @@ import Footer from "./components/Footer";
 
 
 export const metadata: Metadata = {
-  title: "Baseton Moore | Eco-Friendly Construction",
+  metadataBase: new URL("https://basetonmoore.co.uk"),
+  title: {
+    default: "Baseton Moore | Eco-Friendly Construction",
+    template: "%s | Baseton Moore",
+  },
   description: "Sustainable building and design for a greener future.",
+  openGraph: {
+    title: "Baseton Moore | Eco-Friendly Construction",
+    description: "Sustainable building and design for a greener future.",
+    url: "https://basetonmoore.co.uk",
+    siteName: "Baseton Moore",
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Baseton Moore | Eco-Friendly Construction",
+    description: "Sustainable building and design for a greener future.",
+  },
 };
 
 export default function RootLayout({
